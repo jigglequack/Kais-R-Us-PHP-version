@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/desc.css" rel="stylesheet" type="text/css">
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+	<ul>
+	  <li><a href="about.html">About</a></li>
+	  <li><a class="active" href="HomePage.html">Store</a></li>
+	</ul>
+
+  <div class="about-section">
+    <h1>Kais"R"Us</h1>
+  </div>
+
+    <h1 id="title" style="max-width: 1000px; margin: 10px 20px;"></h1>
+    <div class="side-bar">
+      <img id="nav1" style="width:100px; border:1px solid #ddd;" onmouseover="replaceIMG(pic1)">
+      <img id="nav2" style="width:100px; border:1px solid #ddd;" onmouseover="replaceIMG(pic2)">
+    </div>
+
+    <div class="main">
+      <div class ="row">
+
+        <div class="column">
+          <div class="content">
+            <img id="image" style="width:100%">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sidenav">
+    <form action="mailto:example@uci.edu" method="post" enctype="text/plain">
+        <h2>Purchase</h2>
+        <div class="amount">
+          <label for="amount">Quantity:</label>
+          <input type="text" name="amount" required pattern="[0-9]{1}" maxlength="1" placeholder="1">
+        <div class="name">
+            <div>
+                <label for="first name">First</label>
+                <input type="text" name="first name" required placeholder="Bob">
+            </div>
+            <div>
+                <label for="last name">Last</label>
+                <input type="text" name="last name" required placeholder="Ross">
+            </div>
+        </div>
+
+        <div class="phone">
+            <label for="name">Phone Number</label>
+            <input type="text" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+        </div>
+
+        <div class="street">
+            <label for="name">Street</label>
+            <input type="text" name="address" required placeholder="123 Sesame Street">
+        </div>
+        <div class="info">
+            <div>
+                <label for="city">City</label>
+                <input type="text" name="city" required placeholder="Irvine">
+            </div>
+            <div>
+                <label for="state">State</label>
+                <input type="text" name="state" required maxlength="2" placeholder="CA">
+            </div>
+            <div>
+                <label for="zip">Zip</label>
+                <input type="text" name="zip" pattern="[0-9]{5}" maxlength="5" required placeholder="12345">
+            </div>
+        </div>
+
+      <label for="ship">Shipping Speed</label>
+      <select type="text" name="shipping" id="shipping">
+        <option value="Overnight Shipping">Overnight Shipping</option>
+        <option value="2day Expedited">2-Days Expedited</option>
+        <option value="6-Day Ground">6-Days Ground</option>
+      </select>
+
+      <h2>Credit Card</h2>
+      <div class="cc-num">
+                <label for="card-num">Credit Card Number</label>
+                <input type="text" name="card-num" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="1234-5678-9123-4567">
+            </div>
+            <div class="info">
+                <div>
+                    <label for="card-num">Expire</label>
+                    <input type="text" name="expire" required pattern="[0-9]{1|2}/[0-9]{2}" placeholder="4/21">
+                </div>
+                <div>
+                    <label for="card-num">CCV</label>
+                    <input type="text" name="security" required maxlength="3" placeholder="123">
+                </div>
+            </div>
+      </div>
+
+      <input type="submit" value="Send">
+    </form>
+  </div>
+
+  <div class="writeup">
+    <h4><u>Description</u></h4>
+    <p id="writing"></p>
+    <h4><u>Size</u></h4>
+    <p id="size"></p>
+  </div>
+
+  
+
+  <script type="text/javascript">
+    var get = localStorage.getItem("Item");
+    var pic1;
+    var pic2;
+
+    if (get == 'item1'){
+      pic1 = "images/croc1.png"
+      pic2 = "images/croc2.png"
+      document.getElementById("title").innerHTML = "See ya later, Alligator";
+      document.getElementById("image").src = pic1;
+      document.getElementById("nav1").src = pic1;
+      document.getElementById("nav2").src = pic2;
+      document.getElementById("writing").innerHTML= "This is actually a crocodile. A plushy friend for your friend that contains even a squeaky ball inside! So if the toy were to be destroyed, there's still time to play. Plush."
+      document.getElementById("size").innerHTML= "3.75'W x 7.5'D x 4'H"
+    }
+
+
+    if (get == 'item2'){
+      pic1 = "images/sandwich1.jpg"
+      pic2 = "images/sandwich2.jpg"
+      document.getElementById("title").innerHTML = "Thanksgiving Leftovers";
+      document.getElementById("image").src = pic1;
+      document.getElementById("nav1").src = pic1;
+      document.getElementById("nav2").src = pic2;
+      document.getElementById("writing").innerHTML= "For when those big sad eyes keep lookin at you for a little bite. Now distract them with THIS! (fool-proof. very trustable. 10/10 dogs recommend) Very crunchy and smells like home. Plush."
+      document.getElementById("size").innerHTML= "5'W x 7.5'D x 5'H"
+    }
+    if (get == 'item3'){
+      pic1 = "images/football1.png"
+      pic2 = "images/football2.png"
+      document.getElementById("title").innerHTML = "Game Night";
+      document.getElementById("image").src = pic1;
+      document.getElementById("nav1").src = pic1;
+      document.getElementById("nav2").src = pic2;
+      document.getElementById("writing").innerHTML= "A ball for the ball. (And a ball inside that ball! Ball-ception?) Toss this football around and pretend you and your 11 dogs are an official team. Very plush and very soft so no one will get hurt! Plush."
+      document.getElementById("size").innerHTML= "6' x 4' x 4'"
+    }
+    if (get == 'item4'){
+      pic1 = "images/fish1.webp"
+      pic2 = "images/fish2.webp"
+      document.getElementById("title").innerHTML = "Omega-3";
+      document.getElementById("image").src = pic1;
+      document.getElementById("nav1").src = pic1;
+      document.getElementById("nav2").src = pic2;
+      document.getElementById("writing").innerHTML= "Seems a little... fishy. -Your dog probably after trying to destroy this toy. This is the most durable material there is so they never will! Comes with separate pieces for maximum fun. Tough-chew."
+      document.getElementById("size").innerHTML= "7' x 5' x 6'"
+    }
+
+    if (get == 'item5'){
+      pic1 = "images/hedge1.png"
+      pic2 = "images/hedge2.png"
+      document.getElementById("title").innerHTML = "Over the Hedge";
+      document.getElementById("image").src = pic1;
+      document.getElementById("nav1").src = pic1;
+      document.getElementById("nav2").src = pic2;
+      document.getElementById("writing").innerHTML= "Ouch! Just kidding. This is the most durable material there is. Your dog can try to destroy, but they never will! Can store treats inside to improve play. Tough-chew"
+      document.getElementById("size").innerHTML= "5' x 4' x 4'"
+    }
+
+    if (get == 'item6'){
+      pic1 = "images/bird1.png"
+      pic2 = "images/bird2.png"
+      document.getElementById("title").innerHTML = "Which Came First? The Chicken?";
+      document.getElementById("image").src = pic1;
+      document.getElementById("nav1").src = pic1;
+      document.getElementById("nav2").src = pic2;
+      document.getElementById("writing").innerHTML= "Or the egg...? Isn't this the cutest? Like a chicken and an egg that will withstand any force by sheer willpower. Tough-chew."
+      document.getElementById("size").innerHTML= "6' x 4' x 4'"
+    }
+
+    function replaceIMG(elem){
+      document.getElementById("image").src = elem;
+    }
+
+    if (get == 'item7'){
+      pic1 = "images/blue1.webp"
+      pic2 = "images/blue2.webp"
+      document.getElementById("title").innerHTML = "Blue Rope";
+      document.getElementById("image").src = pic1;
+      document.getElementById("nav1").src = pic1;
+      document.getElementById("nav2").src = pic2;
+      document.getElementById("writing").innerHTML= "It's a tug toy! And blue! It's really just a rope but hey, who's complaining? Definitely not your dog when they have this beauty. Rope/Tug-toy."
+      document.getElementById("size").innerHTML= "2 feet long"
+
+    }
+
+    function replaceIMG(elem){
+      document.getElementById("image").src = elem;
+    }
+
+    if (get == 'item8'){
+      pic1 = "images/red1.webp"
+      pic2 = "images/red2.webp"
+      document.getElementById("title").innerHTML = "Red Rope";
+      document.getElementById("image").src = pic1;
+      document.getElementById("nav1").src = pic1;
+      document.getElementById("nav2").src = pic2;
+      document.getElementById("writing").innerHTML= "It's a tug toy! And red! It's really just a rope but hey, who's complaining? Definitely not your dog when they have this beauty. Look at those circles ooo. Rope/Tug-toy."
+      document.getElementById("size").innerHTML= "3 feet long"
+
+    }
+
+    function replaceIMG(elem){
+      document.getElementById("image").src = elem;
+    }
+
+    if (get == 'item9'){
+      pic1 = "images/shark1.webp"
+      pic2 = "images/shark2.webp"
+      document.getElementById("title").innerHTML = "Shark Bait HooHaHa";
+      document.getElementById("image").src = pic1;
+      document.getElementById("nav1").src = pic1;
+      document.getElementById("nav2").src = pic2;
+      document.getElementById("writing").innerHTML= "Shark Bait hoohaha. Re-live your Nemo dreams with this dog toy as you guys play a (cool) game of tug of war. Comes in two colors! Rope/Tug-toy."
+      document.getElementById("size").innerHTML= "2 feet long"
+
+    }
+
+    function replaceIMG(elem){
+      document.getElementById("image").src = elem;
+    }
+
+    if (get == 'item10'){
+      pic1 = "images/ball1.webp"
+      pic2 = "images/ball2.webp"
+      document.getElementById("title").innerHTML = "Basic Ball";
+      document.getElementById("image").src = pic1;
+      document.getElementById("nav1").src = pic1;
+      document.getElementById("nav2").src = pic2;
+      document.getElementById("writing").innerHTML= "It's a ball. Made more for soft chewers. The light weight of this ball lets it be thrown by even your grandma. Ball."
+      document.getElementById("size").innerHTML= "Round"
+
+    }
+
+    function replaceIMG(elem){
+      document.getElementById("image").src = elem;
+    }
+
+    if (get == 'item11'){
+      pic1 = "images/tire1.webp"
+      pic2 = "images/tire2.webp"
+      document.getElementById("title").innerHTML = "I'm Tired";
+      document.getElementById("image").src = pic1;
+      document.getElementById("nav1").src = pic1;
+      document.getElementById("nav2").src = pic2;
+      document.getElementById("writing").innerHTML= "This ball is for the TOUGH! Like your dog decided to join a biker gang and comes home proving how tough they are. Please just buy it the name is a cry for hel-"
+      document.getElementById("size").innerHTML= "Tore apart some tires. Didn't get an exact measurement."
+
+    }
+
+    function replaceIMG(elem){
+      document.getElementById("image").src = elem;
+    }
+
+    if (get == 'item12'){
+      pic1 = "images/nerf1.webp"
+      pic2 = "images/nerf2.webp"
+      document.getElementById("title").innerHTML = "It's Nerf. Or Nuthin.";
+      document.getElementById("image").src = pic1;
+      document.getElementById("nav1").src = pic1;
+      document.getElementById("nav2").src = pic2;
+      document.getElementById("writing").innerHTML= "Also a durable ball. This one is for the athletes. Is your dog a runner and never stops playing? This ball is the choice! Durable material for even the strongest of teeth. Ball."
+      document.getElementById("size").innerHTML= "Round."
+    }
+
+    function replaceIMG(elem){
+      document.getElementById("image").src = elem;
+    }
+
+  </script>
+  </body>
+</html>

@@ -66,3 +66,10 @@ html {
     display: block;
   }
 }
+
+.bottom-bar{
+  font-size: 25px;
+  clear:left;
+  display:block;
+  padding: 0px 20px;
+}

@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.writeup{
+	font-size: 25px;
+	clear:left;
+	display:block;
+	padding: 0px 20px;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.column {
+  float: left;
+  padding: 20px;
+  width: 50%;
+}
+
+.content {
+  border:1px solid #ddd;
+  background-color: white;
+  padding: 10px;
+}
+
+.side-bar{
+  float: left;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  width: 100px;
+
+}
+.sidenav {
+  width: 500px;
+  background: #eee;
+  float:left;
+  padding: 20px 10px;
+}
+
+
+input {
+    width: 100%;
+    min-height: 25px;
+    border: 0;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+select{
+    width: 100%;
+    min-height: 25px;
+    border: 0;
+    margin-top: 10px;
+    border-radius: 5px;	
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    div {
+        width: 45%;
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 30%;
+    }
+}
+
+::placeholder{
+	color: #e1e1e1;
+};
