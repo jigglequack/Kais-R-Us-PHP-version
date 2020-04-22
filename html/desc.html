@@ -9,6 +9,7 @@
 	<ul>
 	  <li><a href="about.html">About</a></li>
 	  <li><a class="active" href="HomePage.html">Store</a></li>
+    <li><a>Kati Tran 33574122</a></li>
 	</ul>
 
   <div class="about-section">
@@ -33,74 +34,50 @@
       </div>
     </div>
 
-    <div class="sidenav">
+    <div class="checkout">
     <form action="mailto:example@uci.edu" method="post" enctype="text/plain">
-        <h2>Purchase</h2>
-        <div class="amount">
-          <label for="amount">Quantity:</label>
-          <input type="text" name="amount" required pattern="[0-9]{1}" maxlength="1" placeholder="1">
-        <div class="name">
-            <div>
-                <label for="first name">First</label>
-                <input type="text" name="first name" required placeholder="Bob">
-            </div>
-            <div>
-                <label for="last name">Last</label>
-                <input type="text" name="last name" required placeholder="Ross">
-            </div>
-        </div>
+      <h2>Purchase</h2>
 
-        <div class="phone">
-            <label for="name">Phone Number</label>
-            <input type="text" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
-        </div>
+      <label for="amount">Quantity:</label>
+        <input type="text" name="amount" required pattern="[0-9]{1}" maxlength="1" placeholder="1">
+      <label for="first name">First Name</label>
+        <input type="text" name="first name" required placeholder="Bob">
+      <label for="last name">Last Name</label>
+        <input type="text" name="last name" required placeholder="Ross">
 
-        <div class="street">
-            <label for="name">Street</label>
-            <input type="text" name="address" required placeholder="123 Sesame Street">
-        </div>
-        <div class="info">
-            <div>
-                <label for="city">City</label>
-                <input type="text" name="city" required placeholder="Irvine">
-            </div>
-            <div>
-                <label for="state">State</label>
-                <input type="text" name="state" required maxlength="2" placeholder="CA">
-            </div>
-            <div>
-                <label for="zip">Zip</label>
-                <input type="text" name="zip" pattern="[0-9]{5}" maxlength="5" required placeholder="12345">
-            </div>
-        </div>
+
+      <label for="name">Phone Number</label>
+        <input type="text" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+      <label for="name">Street</label>
+        <input type="text" name="address" required placeholder="123 Sesame Street">
+      <label for="city">City</label>
+        <input type="text" name="city" required placeholder="Irvine">
+      <label for="state">State</label>
+        <input type="text" name="state" required maxlength="2" placeholder="CA">
+      <label for="zip">Zip</label>
+        <input type="text" name="zip" pattern="[0-9]{5}" maxlength="5" required placeholder="12345">
 
       <label for="ship">Shipping Speed</label>
-      <select type="text" name="shipping" id="shipping">
-        <option value="Overnight Shipping">Overnight Shipping</option>
-        <option value="2day Expedited">2-Days Expedited</option>
-        <option value="6-Day Ground">6-Days Ground</option>
-      </select>
+        <select type="text" name="shipping" id="shipping">
+          <option value="Overnight Shipping">Overnight Shipping</option>
+          <option value="2day Expedited">2-Days Expedited</option>
+          <option value="6-Day Ground">6-Days Ground</option>
+        </select>
 
       <h2>Credit Card</h2>
-      <div class="cc-num">
-                <label for="card-num">Credit Card Number</label>
-                <input type="text" name="card-num" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="1234-5678-9123-4567">
-            </div>
-            <div class="info">
-                <div>
-                    <label for="card-num">Expire</label>
-                    <input type="text" name="expire" required pattern="[0-9]{1|2}/[0-9]{2}" placeholder="4/21">
-                </div>
-                <div>
-                    <label for="card-num">CCV</label>
-                    <input type="text" name="security" required maxlength="3" placeholder="123">
-                </div>
-            </div>
-      </div>
+
+      <label for="card-num">Credit Card Number</label>
+        <input type="text" name="card-num" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="1234-5678-9123-4567">
+      <label for="card-num">Expire</label>
+        <input type="text" name="expire" required placeholder="4/21">
+      <label for="card-num">CCV</label>
+        <input type="text" name="security" required maxlength="3" placeholder="123">
 
       <input type="submit" value="Send">
+
     </form>
   </div>
+
 
   <div class="writeup">
     <h4><u>Description</u></h4>

@@ -20,6 +20,8 @@ h1 {
   color: white;
 }
 
+/*COPIED CODE*/
+
 /* Center website */
 .main {
   max-width: 1200px;
@@ -48,8 +50,8 @@ h1 {
   display: table;
   clear: both;
 }
+/*COPIED CODE END*/
 
-/* Content */
 .content {
   border-radius: 15px;
   background-color: white;

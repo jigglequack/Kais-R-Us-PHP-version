@@ -10,12 +10,18 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+.row{
+  max-width: 1200px;
+  margin: auto;
+}
 .column {
   float: left;
-  width: 30.3%;
-  margin-bottom: 16px;
+  width: 33.3%;
   padding: 0 8px;
+}
+
+.title {
+  color: grey;
 }
 
 .card {
@@ -40,10 +46,6 @@ html {
   display: table;
 }
 
-.title {
-  color: grey;
-}
-
 .button {
   border: none;
   outline: 0;
@@ -58,13 +60,6 @@ html {
 
 .button:hover {
   background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
 }
 
 .bottom-bar{

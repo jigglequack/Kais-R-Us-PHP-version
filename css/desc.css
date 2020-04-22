@@ -34,7 +34,6 @@ h1 {
 }
 
 .content {
-  border:1px solid #ddd;
   background-color: white;
   padding: 10px;
 }
@@ -46,20 +45,17 @@ h1 {
   width: 100px;
 
 }
-.sidenav {
+.checkout {
   width: 500px;
   background: #eee;
   float:left;
   padding: 20px 10px;
 }
 
-
 input {
     width: 100%;
     min-height: 25px;
     border: 0;
-    margin-top: 5px;
-    border-radius: 5px;
 }
 
 label {
@@ -72,25 +68,6 @@ select{
     width: 100%;
     min-height: 25px;
     border: 0;
-    margin-top: 10px;
-    border-radius: 5px;	
-}
-
-.name {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    div {
-        width: 45%;
-    }
-}
-
-.info {
-    display: flex;
-    justify-content: space-between;
-    div {
-        width: 30%;
-    }
 }
 
 ::placeholder{
