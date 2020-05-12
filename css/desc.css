@@ -33,7 +33,7 @@ h1 {
   width: 50%;
 }
 
-.content {
+.dcontent {
   background-color: white;
   padding: 10px;
 }
@@ -71,5 +71,5 @@ select{
 }
 
 ::placeholder{
-	color: #e1e1e1;
+	color: #c8d4e3;
 };
